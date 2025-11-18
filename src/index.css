@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  font-family: "inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aventi";
+  src: url("/fonts/AventiBold-x3VVj.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@layer utilities {
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fadeInUp {
+    animation: fadeInUp 1s ease forwards;
+  }
+}
