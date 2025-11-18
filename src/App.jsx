@@ -11,7 +11,7 @@ import Resume from './pages/Resume'
 
 const App = () => {
   return (
-    <div className='w-full overflow-x-hidden'>
+    <div className="max-w-5xl mx-auto px-4 md:px-6 lg:px-8">
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />} />

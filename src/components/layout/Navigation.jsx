@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { HiBars3BottomRight } from "react-icons/hi2";
 import { IoMdClose } from "react-icons/io";
 import { Link } from "react-router-dom";
-// import logo from "../../assets/logo.jpeg";
 
 const Navigation = () => {
     const [navDrawerOpen, setNavDrawerOpen] = useState(false);
@@ -11,17 +10,20 @@ const Navigation = () => {
     return (
         <>
             {/* Desktop Navbar */}
-            <nav className="container mx-auto flex items-center justify-between py-3 px-6">
+            <nav className="container mx-auto flex items-center justify-between py-5 px-9">
                 {/* Left — Logo */}
                 <div className="flex items-center">
                     <Link to="/" className="flex items-center">
-                        <h1>Kweku Quaye</h1>
+                        <div className="flex flex-col text-left leading-tight">
+                            <h1 className="font-semibold text-base">Kweku Quaye</h1>
+                            <h2 className="text-[16px] text-gray-500">Software Engineer</h2>
+                        </div>
 
                     </Link>
                 </div>
 
                 {/* Right — Nav Links */}
-                <div className="hidden md:flex space-x-8 text-gray-700 font-medium">
+                <div className="hidden md:flex space-x-5 text-gray-700 font-medium">
                     <Link to="/" className="hover:text-[#374552] transition-colors">
                         Home
                     </Link>
