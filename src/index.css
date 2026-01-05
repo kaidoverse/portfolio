@@ -8,6 +8,9 @@
   font-style: normal;
 }
 
+body {
+  @apply bg-white text-neutral-900 antialiased;
+}
 @font-face {
   font-family: "Aventi";
   src: url("/fonts/AventiBold-x3VVj.ttf") format("truetype");
