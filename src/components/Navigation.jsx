@@ -45,7 +45,7 @@ const Navigation = () => {
                             Blog
                         </Link>
                         <a
-                            href="/mycvcollins.pdf"
+                            href="/resume2.pdf"
                             className="text-muted hover:text-fg transition-colors"
                         >
                             Resume
@@ -99,13 +99,12 @@ const Navigation = () => {
                         >
                             Blog
                         </Link>
-                        <Link
-                            to="/resume"
-                            onClick={toggleNavDrawer}
-                            className="block text-muted hover:text-fg transition-colors"
+                        <a
+                            href="/resume2.pdf"
+                            className="text-muted hover:text-fg transition-colors"
                         >
                             Resume
-                        </Link>
+                        </a>
                     </nav>
                 </div>
             </div>
