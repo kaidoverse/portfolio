@@ -1,12 +1,16 @@
-import React from 'react'
-import Navigation from "../components/layout/Navigation";
-import Hero from '../components/home/Hero';
+import React from "react";
+import Hero from "../sections/Hero";
+import Projects from "../sections/Projects";
+import Blog from "../sections/Blog";
 
 const Home = () => {
     return (
-        <div>
+        <div className=" px-6">
+            <Hero />
+            <Projects />
+            <Blog />
         </div>
-    )
+    );
 }
 
 export default Home

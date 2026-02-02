@@ -8,7 +8,14 @@ export default {
       fontFamily: {
         sans: ["Inter", "system-ui", "sans-serif"],
       },
+      colors: {
+        bg: "var(--bg)",
+        fg: "var(--fg)",
+        muted: "var(--muted)",
+        border: "var(--border)",
+        card: "var(--card)",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };

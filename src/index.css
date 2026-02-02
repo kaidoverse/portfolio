@@ -2,15 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-#root {
+:root {
   font-family: "inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  --bg: #ffffff;
+  --fg: #0f172a;
+  --muted: #64748b;
+  --border: #e5e7eb;
+  --card: #f8fafc;
 }
 
-body {
-  @apply bg-white text-neutral-900 antialiased;
+[data-theme="dark"] {
+  --bg: #0b0c10;
+  --fg: #e5e7eb;
+  --muted: #9ca3af;
+  --border: #1f2933;
+  --card: #111827;
 }
+
+html,
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  @apply antialiased transition-colors duration-300;
+  /* overflow-x: hidden; */
+}
+
 @font-face {
   font-family: "Aventi";
   src: url("/fonts/AventiBold-x3VVj.ttf") format("truetype");
@@ -32,5 +50,43 @@ body {
 
   .animate-fadeInUp {
     animation: fadeInUp 1s ease forwards;
+  }
+}
+
+@layer components {
+  .blog-content h1 {
+    @apply text-2xl font-semibold mt-8;
+  }
+
+  .blog-content h1 {
+    @apply text-2xl font-semibold mt-6;
+  }
+
+  .blog-content h3 {
+    @apply text-xl font-semibold mt-4;
+  }
+
+  .blog-content p {
+    @apply text-base text-muted leading-relaxed;
+  }
+
+  .blog-content ul {
+    @apply list-disc pl-6 text-muted;
+  }
+
+  .blog-content li {
+    @apply mb-2;
+  }
+
+  .blog-content a {
+    @apply text-fg underline hover:text-muted;
+  }
+
+  .blog-content code {
+    @apply bg-card px-1 py-0.5 rounded text-sm;
+  }
+
+  .blog-content pre {
+    @apply bg-card p-4 rounded overflow-x-auto;
   }
 }

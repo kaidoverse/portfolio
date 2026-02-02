@@ -2,9 +2,9 @@ import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Projects from './pages/Projects'
-import Blog from './pages/Blog'
-import Resume from './pages/Resume'
-import UserLayout from './components/layout/UserLayout'
+import Blogs from './pages/Blogs'
+import UserLayout from './components/UserLayout'
+import SingleBlog from './pages/SingleBlog'
 
 
 // import { Toaster } from "sonner"
@@ -18,8 +18,8 @@ const App = () => {
         <Route index element={<Home />} />
         <Route path='home' element={<Home />} />
         <Route path='projects' element={<Projects />} />
-        <Route path='blog' element={<Blog />} />
-        <Route path='resume' element={<Resume />} />
+        <Route path='blog' element={<Blogs />} />
+        <Route path="/blog/:slug" element={<SingleBlog />} />
       </Route>
     </Routes>
 
