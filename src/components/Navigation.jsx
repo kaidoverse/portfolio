@@ -101,7 +101,7 @@ const Navigation = () => {
                         </Link>
                         <a
                             href="/resume2.pdf"
-                            className="text-muted hover:text-fg transition-colors"
+                            className="block text-muted hover:text-fg transition-colors"
                         >
                             Resume
                         </a>
