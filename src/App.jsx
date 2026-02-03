@@ -5,6 +5,7 @@ import Projects from './pages/Projects'
 import Blogs from './pages/Blogs'
 import UserLayout from './components/UserLayout'
 import SingleBlog from './pages/SingleBlog'
+import CaseStudy from './pages/CaseStudy'
 
 
 // import { Toaster } from "sonner"
@@ -20,6 +21,7 @@ const App = () => {
         <Route path='projects' element={<Projects />} />
         <Route path='blog' element={<Blogs />} />
         <Route path="/blog/:slug" element={<SingleBlog />} />
+        <Route path="projects/:slug" element={<CaseStudy />} />
       </Route>
     </Routes>
 

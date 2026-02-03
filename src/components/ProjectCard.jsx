@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { HiArrowUpRight } from "react-icons/hi2";
+import { Link } from "react-router-dom";
+
 
 
 const ProjectCard = ({ project }) => {
@@ -65,9 +67,22 @@ const ProjectCard = ({ project }) => {
                         </span>
                     ))}
                 </div>
+                {project.hasCaseStudy && (
+                    <Link
+                        to={project.caseStudyPath}
+                        className="inline-block text-xs font-semibold px-3 py-1 rounded-full
+                       bg-green-100 text-green-800
+                       dark:bg-green-900/30 dark:text-green-400
+                       hover:opacity-80 transition"
+                    >
+                        UX Case Study →
+                    </Link>
+                )}
             </div>
         </div>
     );
 };
 
 export default ProjectCard;
+
+

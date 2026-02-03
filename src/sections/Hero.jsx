@@ -18,7 +18,7 @@ const Hero = () => {
                 </h1>
 
                 <p className="text-neutral-700 max-w-2xl">
-                    I’m a UI/UX-focused frontend developer, with experience designing user-centered interfaces, prototyping in Figma, and building responsive web applications in React.
+                    I’m a UI/UX-focused frontend developer and I design and build intuitive, accessible interfaces by translating user needs into scalable React applications.
 
                 </p>
 
