@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import projects from "../data/projects";
+import wireframe from "../assets/wireframe.webp";
 
 const CaseStudy = () => {
     const { slug } = useParams();
@@ -57,7 +58,7 @@ const CaseStudy = () => {
             <section className="space-y-6">
                 <h2 className="text-lg font-medium">Wireframe / Prototype</h2>
                 <img
-                    src="/src/assets/wireframe-whiteopal.webp"
+                    src={wireframe}
                     alt="Whiteopal Wireframe"
                     className="w-full rounded-lg border border-neutral-200 dark:border-neutral-700"
                 />
