@@ -22,7 +22,7 @@ const projects = [
         title: "NUBIAN",
         slug: "nubian",
         featured: true,
-        hasCaseStudy: true,
+        // hasCaseStudy: true,
         caseStudyPath: "/projects/nubian",
         description:
             "Mobile-first e-commerce UI with reusable React components and Tailwind CSS design system.",
