@@ -20,7 +20,7 @@ const Navigation = () => {
                             Kweku Quaye
                         </h1>
                         <h2 className="text-sm text-muted">
-                            Software Engineer
+                            Frontend Engineer
                         </h2>
                     </Link>
 

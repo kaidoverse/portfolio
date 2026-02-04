@@ -18,8 +18,8 @@ savedTheme === "dark"
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+
+    <App />
+
   </StrictMode>,
 )

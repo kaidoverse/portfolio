@@ -24,9 +24,13 @@ const SingleBlog = () => {
                 <span className="text-sm text-muted">{post.date}</span>
             </div>
 
-            <article className="blog-content space-y-6">
-                {post.content}
-            </article>
+
+            <div>
+                <article className="blog-content space-y-6">
+                    {post.content}
+                </article>
+            </div>
+
 
 
 

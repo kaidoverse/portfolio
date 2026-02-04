@@ -8,14 +8,18 @@
   font-style: normal;
   --bg: #ffffff;
   --fg: #0f172a;
+  --body: #334155;
   --muted: #64748b;
   --border: #e5e7eb;
   --card: #f8fafc;
 }
 
 [data-theme="dark"] {
-  --bg: #0b0c10;
+  /* --bg: #0b0c10; */
+
+  --bg: #0f0f0f;
   --fg: #e5e7eb;
+  --body: #d1d5db;
   --muted: #9ca3af;
   --border: #1f2933;
   --card: #111827;
@@ -65,13 +69,14 @@ body {
   .blog-content h3 {
     @apply text-xl font-semibold mt-4;
   }
-
   .blog-content p {
-    @apply text-base text-muted leading-relaxed;
+    color: var(--body);
+    @apply text-base leading-relaxed mb-5;
   }
 
   .blog-content ul {
-    @apply list-disc pl-6 text-muted;
+    color: var(--body);
+    @apply list-disc pl-6;
   }
 
   .blog-content li {
