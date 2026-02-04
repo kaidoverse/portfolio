@@ -6,7 +6,7 @@ import Blogs from './pages/Blogs';
 import UserLayout from './components/UserLayout';
 import SingleBlog from './pages/SingleBlog';
 import CaseStudy from './pages/CaseStudy';
-import ScrollToTop from './components/ScrollToTop';
+import ScrollToTop from './components/scrollToTop';
 
 const App = () => {
   return (
